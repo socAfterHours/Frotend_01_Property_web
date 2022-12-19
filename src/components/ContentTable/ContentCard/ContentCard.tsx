@@ -6,12 +6,11 @@ type CardProps = {
     rooms?: number;
     
     className?: string;
-    id?: number;
 };
 
 
 const ContentCard = (props: CardProps) => {
-    const { picture, title, description, price, rooms, id } = props;
+    const { picture, title, description, price, rooms, } = props;
     return (
     
          <div className="card">

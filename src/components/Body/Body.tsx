@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Body = (props:{children:React.ReactNode}) => {
+type BodyProps = {
+  children?: React.ReactNode;
+}
+
+const Body = (props: BodyProps) => {
   return (
     <div>{props.children}</div>
   )
