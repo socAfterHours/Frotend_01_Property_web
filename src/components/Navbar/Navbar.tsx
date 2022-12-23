@@ -3,16 +3,16 @@ import { faHouseFlag } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   return (
-    <div className="navbar bg-[#EAEEF3]">
+    <div className="navbar">
       <div className="flex-1">
       
-        <a href="/"  className="btn btn-ghost normal-case text-xl text-[#152C36]">
-        <FontAwesomeIcon icon={faHouseFlag} className='text-[#03628C] mr-2'/>
+        <a href="/"  className="btn btn-ghost normal-case text-xl text-bold-text">
+        <FontAwesomeIcon icon={faHouseFlag} className='text-primary mr-2'/>
         LOGO</a>
       </div>
       <div className="flex-none gap-2">
         <div className="dropdown dropdown-end">
-          <button tabIndex={0} className="btn btn-square btn-ghost text-[#596C75]">
+          <button tabIndex={0} className="btn btn-square btn-ghost text-bold-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -30,19 +30,19 @@ function Navbar() {
 
           <ul
             tabIndex={0}
-            className="mt-3 p-2 shadow menu menu-compact dropdown-content text-[#152C36] bg-[#EAEEF3] rounded-box w-52"
+            className="mt-3 p-2 shadow menu menu-compact dropdown-content text-bold-text font-medium bg-light rounded-box w-52"
           >
             <li>
-              <a href="/" className="justify-between hover:bg-[#6CA3BB] hover:text-[#EAEEF3] hover:font-bold focus:bg-[#03628C] focus:text-[#fff]">
+              <a href="/" className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]">
                 Profile
-                <span className="badge">New</span>
+                <span className="badge bg-hot-prop border-none text-[#fff]">New</span>
               </a>
             </li>
             <li>
-              <a href="/" className="justify-between hover:bg-[#6CA3BB] hover:text-[#EAEEF3] hover:font-bold focus:bg-[#03628C] focus:text-[#fff]" >Settings</a>
+              <a href="/" className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]" >Settings</a>
             </li>
             <li>
-              <a href="/" className="justify-between hover:bg-[#6CA3BB] hover:text-[#EAEEF3] hover:font-bold focus:bg-[#03628C] focus:text-[#fff]" >Logout</a>
+              <a href="/" className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]" >Logout</a>
             </li>
           </ul>
         </div>

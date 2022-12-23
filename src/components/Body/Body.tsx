@@ -6,7 +6,7 @@ type BodyProps = {
 
 const Body = (props: BodyProps) => {
   return (
-    <div>{props.children}</div>
+    <div className='bg-light min-h-[100vh]'>{props.children}</div>
   )
 }
 

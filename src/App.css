@@ -1,4 +1,7 @@
 @tailwind base;
+.base {
+  @apply bg-red-500;
+}
 @tailwind components;
 @tailwind utilities;
 

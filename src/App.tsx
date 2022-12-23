@@ -1,19 +1,16 @@
-import './App.css';
-import Body from './components/Body/Body';
-import ContentTable from './components/ContentTable/ContentTable';
-import Hero from './components/Hero/Hero';
-import Navbar from './components/Navbar/Navbar';
-
+import "./App.css";
+import Body from "./components/Body/Body";
+import ContentTable from "./components/ContentTable/ContentTable";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="min-h-[100vh] bg-[#F2F2F2]">
+    <div>
       <Body>
-        
         <Navbar />
-        <Hero/>
+        <Hero />
         {/* <ContentTable/> */}
-        
       </Body>
     </div>
   );
