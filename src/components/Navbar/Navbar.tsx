@@ -1,18 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseFlag } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 function Navbar() {
+  const [isDark, setIsDark] = useState(false);
   return (
-    <div className="navbar">
+    <div className="navbar bg-light sticky top-0 z-50">
       <div className="flex-1">
-      
-        <a href="/"  className="btn btn-ghost normal-case text-xl text-bold-text">
-        <FontAwesomeIcon icon={faHouseFlag} className='text-primary mr-2'/>
-        LOGO</a>
+        <a
+          href="/"
+          className="btn btn-ghost normal-case text-xl text-bold-text"
+        >
+          <FontAwesomeIcon icon={faHouseFlag} className="text-primary mr-2" />
+          LOGO
+        </a>
       </div>
       <div className="flex-none gap-2">
+        <input
+          onClick={() => setIsDark(!isDark)}
+          type="checkbox"
+          className={`toggle toggle-info ${isDark ? "!bg-primary" : ""}`}
+        ></input>
         <div className="dropdown dropdown-end">
-          <button tabIndex={0} className="btn btn-square btn-ghost text-bold-text">
+          <button
+            tabIndex={0}
+            className="btn btn-square btn-ghost text-bold-text"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -33,16 +46,31 @@ function Navbar() {
             className="mt-3 p-2 shadow menu menu-compact dropdown-content text-bold-text font-medium bg-light rounded-box w-52"
           >
             <li>
-              <a href="/" className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]">
+              <a
+                href="/"
+                className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]"
+              >
                 Profile
-                <span className="badge bg-hot-prop border-none text-[#fff]">New</span>
+                <span className="badge bg-hot-prop border-none text-[#fff]">
+                  New
+                </span>
               </a>
             </li>
             <li>
-              <a href="/" className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]" >Settings</a>
+              <a
+                href="/"
+                className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]"
+              >
+                Settings
+              </a>
             </li>
             <li>
-              <a href="/" className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]" >Logout</a>
+              <a
+                href="/"
+                className="justify-between hover:bg-secondary hover:text-light hover:font-bold focus:bg-primary focus:text-[#fff]"
+              >
+                Logout
+              </a>
             </li>
           </ul>
         </div>

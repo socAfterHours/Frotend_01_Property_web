@@ -1,7 +1,7 @@
 import React from 'react'
 
 type BodyProps = {
-  children?: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const Body = (props: BodyProps) => {

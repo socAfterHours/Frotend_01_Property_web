@@ -2,7 +2,7 @@ import FilterInterface from "./FilterInterface/FilterInterface";
 
 const Hero = () => {
   return (
-    <div className="min-h-[50vh]">
+    <div className="min-h-[60vh] ">
       <div
         className="hero min-h-[35vh]"
         style={{
@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-center content-center">
+      <div className="flex justify-center content-center ">
         <FilterInterface />
       </div>
     </div>

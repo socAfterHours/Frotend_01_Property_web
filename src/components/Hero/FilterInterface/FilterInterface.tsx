@@ -3,7 +3,7 @@ import Info from "./Info";
 
 const FilterInterface = () => {
   return (
-    <div className="min-h-[25vh] w-[100vw] md:w-[90vw] absolute top-[35%]">
+    <div className="min-h-[25vh] relative w-[100vw] md:absolute md:w-[90vw]  top-[35%]">
       <div className="bg-[#fff] flex flex-col gap-2 sm:gap-0 sm:grid grid-cols-3 min-h-[12.5vh] flex-grow place-items-center md:rounded-t-box p-2">
         <Filter tittle="Number of Rooms..." options={["Item 1", "Item 2"]} />
         <Filter tittle="Location..." options={["Item 1", "Item 2"]} />

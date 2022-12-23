@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 
+import ButtonPrimary from "../../utilities/ButtonPrimary";
+
 type InfoProps = {
   h2: string;
   p: string;
@@ -22,9 +24,7 @@ const Info = (props: InfoProps) => {
         </p>
       </div>
 
-      <button className="btn btn-outline border-light text-[#FFF] hover:text-primary hover:bg-light hover:font-bold px-10">
-        Calulate Now
-      </button>
+      <ButtonPrimary text="Calculate Now!" className={"border-light text-[#FFF] hover:text-primary hover:bg-light"}/>
     </div>
   );
 };
