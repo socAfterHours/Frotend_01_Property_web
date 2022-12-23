@@ -7,12 +7,12 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="bg-red-400 md:bg-blue-100 lg:bg-green-500">
+    <div className="min-h-[100vh] bg-[#F2F2F2]">
       <Body>
         
         <Navbar />
         <Hero/>
-        <ContentTable/>
+        {/* <ContentTable/> */}
         
       </Body>
     </div>
