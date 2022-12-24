@@ -4,6 +4,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 type CardProps = {
   picture?: string;
   type?: string;
@@ -16,12 +17,12 @@ type CardProps = {
 const ContentCard = (props: CardProps) => {
   const { picture, type, price, rooms, location, description } = props;
   return (
-    <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4">
+    <div className="w-full py-4 sm:w-1/2 md:w-1/2 md:px-4 xl:w-1/3">
       <a
         href="/"
         className="block bg-[#FFF] shadow-md hover:shadow-xl overflow-hidden md:rounded-lg"
       >
-        <div className="relative pb-48 overflow-hidden">
+        <div className="relative h-[25vh] overflow-hidden">
           <img
             className="absolute inset-0 h-full w-full object-cover"
             src={
